@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: ghcr.io/<YOUR_GITHUB_USERNAME>/demo-app:latest
+        image: ghcr.io/${{ secrets.GHCR_USERNAME }}/demo-app:latest
         ports:
         - containerPort: 3000
